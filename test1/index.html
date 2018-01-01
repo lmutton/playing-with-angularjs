@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="root">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="root.js"></script>
+  </head>
+  <body>
+    <h1 ng-controller="index">{{message}}</h1>
+    Animal: <input type="text" ng-model="favouriteAnimal" />
+      {{favouriteAnimal}}
+      <!--TWO WAY BINIDNG-->
+      <!--when typing in <input> ng-model(ngModel) will set the value
+      of favouriteAnimal and then with {{favouriteAnimal}} we can display the value as we type :)
+      -->
+  </body>
+</html>
