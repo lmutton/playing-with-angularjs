@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Counter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body ng-app="root">
+    <div ng-controller="plusMinus">
+      <h1>{{ counter }}</h1>
+      <button class="btn" id="plus" ng-click="plus()"> + </button>
+      <button class="btn" id="minus" ng-click="minus()"> - </button>
+    </div>
+  </body>
+</html>
