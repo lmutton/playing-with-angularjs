@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body ng-app="root">
+    <div ng-controller="PersonCtrl as person">
+      <h1>
+        Everybody:
+      </h1>
+      <ul>
+        <li ng-repeat="friend in person.friends">
+          {{ friend }}
+        </li>
+      </ul>
+    </div>
+    <div ng-controller="PersonCtrl as person">
+      <h1>
+        Humans
+      </h1>
+      <ul>
+        <li ng-repeat="friend in person.friends | aHuman">
+          {{ friend }}
+        </li>
+      </ul>
+    </div>
+    <div ng-controller="PersonCtrl as person">
+      <h1>
+        Animals
+      </h1>
+      <ul>
+        <li ng-repeat="friend in person.friends | anAnimal">
+          {{ friend }}
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
